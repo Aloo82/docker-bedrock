@@ -1,12 +1,21 @@
-# Docker for Wordpress Bedrock from roots.io
+### Setup
 
-Ease your Wordpress development with Docker for Bedrock.
+1. ./build.sh
+2. docker-compose up
+3. Browse to http://localhost:8181
+4. Create database 'wordpress'
+5. (Optional) Import data
+6. Copy bedrock site to ./bedrock
+7. Update .env file (DB_HOST='wordpress_db'
+                     DB_NAME='wordpress'
+                     DB_PASSWORD='secret'
+                     DB_USER='root')
+8. Browse to http://localhost:8000
 
-The most simple way to use Docker for Wordpress Development! Setting up your Wordpress development environment in a heartbeat. No more VirtualBox!
+### Nginx Update
 
-**PHP:** [![PHP Docker Pulls](https://img.shields.io/docker/pulls/hoangstark/bedrock-php.svg)](https://hub.docker.com/r/hoangstark/bedrock-php.svg/) [![PHP Docker Pulls](https://img.shields.io/docker/stars/hoangstark/bedrock-php.svg)](https://hub.docker.com/r/hoangstark/bedrock-php/) 
-
-**Nginx:** [![nginx Docker Pulls](https://img.shields.io/docker/pulls/hoangstark/bedrock-nginx.svg)](https://hub.docker.com/r/hoangstark/bedrock-nginx/) [![PHP Docker Pulls](https://img.shields.io/docker/stars/hoangstark/bedrock-nginx.svg)](https://hub.docker.com/r/hoangstark/bedrock-nginx/)
+1. Make modifications in ./images/nginx/conf/inc/
+2. ./nginx-update.sh dockerbedrock_nginx_1
 
 ### Included Software
 
