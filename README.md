@@ -1,21 +1,26 @@
 ### Setup
 
 1. ./build.sh
-2. docker-compose up -d
-3. Browse to http://localhost:8181
-4. Create database 'wordpress'
-5. (Optional) Import data
-6. Copy bedrock site to ./bedrock
-7. Update .env file (DB_HOST='wordpress_db'
+2. Copy bedrock site to ./bedrock
+3. Update .env file (DB_HOST='wordpress_db'
                      DB_NAME='wordpress'
                      DB_PASSWORD='secret'
                      DB_USER='root')
+4. docker-compose up -d
+5. Browse to http://localhost:8181
+6. Create database 'wordpress'
+7. (Optional) Import data
 8. Browse to http://localhost:8000
 
 ### Nginx Update
 
 1. Make modifications in ./images/nginx/conf/inc/
-2. ./nginx-update.sh dockerbedrock_nginx_1
+2. ./nginx-update.sh
+3. (Optional) fswatch -0 -o ./images/nginx/conf | xargs -0 -n1 ./nginx-update.sh
+
+### Shutdown
+
+1. docker-compose down
 
 ### Included Software
 
