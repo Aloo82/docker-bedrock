@@ -22,6 +22,10 @@
 
 1. docker-compose down
 
+### Destrop all - WARNING : This will remove all images
+
+1. docker rmi $(docker images -q)
+
 ### Included Software
 
 - PHP 7.0
