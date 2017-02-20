@@ -1,7 +1,7 @@
 ### Setup
 
 1. ./build.sh
-2. docker-compose up
+2. docker-compose up -d
 3. Browse to http://localhost:8181
 4. Create database 'wordpress'
 5. (Optional) Import data
