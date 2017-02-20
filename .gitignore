@@ -1,4 +1,4 @@
 # Created by .ignore support plugin (hsz.mobi)
-!bedrock/.gitkeep
 bedrock/*
+!bedrock/.gitkeep
 mysql.conf/*
